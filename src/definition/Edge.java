@@ -32,4 +32,16 @@ public class Edge {
         this.destinationVertex = destinationVertex;
         this.weightOfEdge = weightOfEdge;
     }
+
+    public int getSourceVertex() {
+        return sourceVertex;
+    }
+
+    public int getDestinationVertex() {
+        return destinationVertex;
+    }
+
+    public double getWeightOfEdge() {
+        return weightOfEdge;
+    }
 }
