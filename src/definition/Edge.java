@@ -60,9 +60,12 @@ public class Edge {
                 getDestinationVertex() == edge.getDestinationVertex();
     }
 
+    /**
+     * The hashCode for an edge will only contain the source vertex and the destination vertex.
+     */
     @Override
     public int hashCode() {
-        return Objects.hash(getSourceVertex(), getDestinationVertex(), getWeightOfEdge());
+        return Objects.hash(getSourceVertex(), getDestinationVertex());
     }
 
     @Override
