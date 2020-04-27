@@ -7,5 +7,8 @@ package adt;
  * We represent vertices in a Graph with integers from 0 to n-1.
  */
 public interface GraphADT {
-
+    /**
+     * This method will return the number of veritces in a Graph.
+     */
+    int getNumberOfVertices();
 }
