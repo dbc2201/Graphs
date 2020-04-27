@@ -1,5 +1,7 @@
 package adt;
 
+import definition.Edge;
+
 /**
  * This is the ADT for a Graph.
  * Methods deemed necessary for a Graph will be defined here first.
@@ -16,4 +18,9 @@ public interface GraphADT {
      * This method determines whether the graph is a directed graph.
      */
     boolean isDirectedGraph();
+
+    /**
+     * This method will insert an edge into the graph.
+     */
+    void insertEdgeIntoGraph(Edge edge);
 }
