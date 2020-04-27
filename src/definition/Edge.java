@@ -7,6 +7,8 @@
 
 package definition;
 
+import java.util.Objects;
+
 /**
  * We will represent an edge between a pair of vertices with this class.
  */
@@ -43,5 +45,20 @@ public class Edge {
 
     public double getWeightOfEdge() {
         return weightOfEdge;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Edge edge = (Edge) o;
+        return getSourceVertex() == edge.getSourceVertex() &&
+                getDestinationVertex() == edge.getDestinationVertex() &&
+                Double.compare(edge.getWeightOfEdge(), getWeightOfEdge()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getSourceVertex(), getDestinationVertex(), getWeightOfEdge());
     }
 }
