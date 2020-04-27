@@ -53,8 +53,7 @@ public class Edge {
         if (o == null || getClass() != o.getClass()) return false;
         Edge edge = (Edge) o;
         return getSourceVertex() == edge.getSourceVertex() &&
-                getDestinationVertex() == edge.getDestinationVertex() &&
-                Double.compare(edge.getWeightOfEdge(), getWeightOfEdge()) == 0;
+                getDestinationVertex() == edge.getDestinationVertex();
     }
 
     @Override
