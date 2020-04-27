@@ -32,4 +32,14 @@ public interface GraphADT {
      * @return true if there is an edge between the sourceVertex and the destinationVertex.
      */
     boolean isEdge(int sourceVertex, int destinationVertex);
+
+    /**
+     * This method will retrieve an edge between a pair of two vertices.
+     * It should only be called if said edge exists; you can check if the said edge exists with the isEdge() method.
+     *
+     * @param sourceVertex      the source vertex
+     * @param destinationVertex the destination vertex
+     * @return the edge between the two vertices or null if there is no edge.
+     */
+    Edge getEdge(int sourceVertex, int destinationVertex);
 }
