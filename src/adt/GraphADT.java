@@ -2,6 +2,8 @@ package adt;
 
 import definition.Edge;
 
+import java.util.Iterator;
+
 /**
  * This is the ADT for a Graph.
  * Methods deemed necessary for a Graph will be defined here first.
@@ -42,4 +44,12 @@ public interface GraphADT {
      * @return the edge between the two vertices or null if there is no edge.
      */
     Edge getEdge(int sourceVertex, int destinationVertex);
+
+    /**
+     * This method will return an Iterator to the edges connected to a given vertex.
+     *
+     * @param sourceVertex the source vertex
+     * @return An Iterator<Edge> to the vertices connected to the source vertex.
+     */
+    Iterator<Edge> edgeIterator(int sourceVertex);
 }
