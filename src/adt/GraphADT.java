@@ -11,4 +11,9 @@ public interface GraphADT {
      * This method will return the number of veritces in a Graph.
      */
     int getNumberOfVertices();
+
+    /**
+     * This method determines whether the graph is a directed graph.
+     */
+    boolean isDirectedGraph();
 }
