@@ -61,4 +61,13 @@ public class Edge {
     public int hashCode() {
         return Objects.hash(getSourceVertex(), getDestinationVertex(), getWeightOfEdge());
     }
+
+    @Override
+    public String toString() {
+        return "(" + getSourceVertex() + ")" +
+                " -> " +
+                getWeightOfEdge() +
+                " -> " +
+                "(" + getDestinationVertex() + ")";
+    }
 }
