@@ -11,4 +11,7 @@ package definition;
  * We will represent an edge between a pair of vertices with this class.
  */
 public class Edge {
+    private int sourceVertex;
+    private int destinationVertex;
+    private double weightOfEdge;
 }
