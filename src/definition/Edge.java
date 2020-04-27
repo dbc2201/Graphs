@@ -14,4 +14,13 @@ public class Edge {
     private int sourceVertex;
     private int destinationVertex;
     private double weightOfEdge;
+
+    /**
+     * This constructor creates an edge with only the source vertex and the destination vertex.
+     * We assume that we do not know the weight for this edge yet.
+     */
+    public Edge(int sourceVertex, int destinationVertex) {
+        this.sourceVertex = sourceVertex;
+        this.destinationVertex = destinationVertex;
+    }
 }
