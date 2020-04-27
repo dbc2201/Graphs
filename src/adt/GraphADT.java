@@ -23,4 +23,13 @@ public interface GraphADT {
      * This method will insert an edge into the graph.
      */
     void insertEdgeIntoGraph(Edge edge);
+
+    /**
+     * This method determines whether an edge exists between a pair of sourceVertex and a destinationVertex.
+     *
+     * @param sourceVertex      the source vertex
+     * @param destinationVertex the destination vertex
+     * @return true if there is an edge between the sourceVertex and the destinationVertex.
+     */
+    boolean isEdge(int sourceVertex, int destinationVertex);
 }
