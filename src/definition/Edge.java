@@ -70,10 +70,9 @@ public class Edge {
 
     @Override
     public String toString() {
-        return "(" + getSourceVertex() + ")" +
-                " -> " +
-                getWeightOfEdge() +
-                " -> " +
-                "(" + getDestinationVertex() + ")";
+        return String.format("(%d) -> %.2f -> (%d)",
+                getSourceVertex(),
+                getWeightOfEdge(),
+                getDestinationVertex());
     }
 }
