@@ -47,6 +47,10 @@ public class Edge {
         return weightOfEdge;
     }
 
+    /**
+     * If two edges have the same source vertex and the destination vertex, then,
+     * irrespective of their weights, they will be considered equal.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
